@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #021526;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    background-size: cover;
+    padding: 10px;
+}
+
+.container {
+    background: rgba(144, 160, 173, 0.1);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 30px 20px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+.container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    color: white;
+    font-size: 1.2em;
+    padding: 0 10px;
+}
+
+.container label {
+    display: block;
+    font-size: 1em;
+    text-align: left;
+}
+
+.container input[type="text"],
+.container input[type="password"],
+.container input[type="email"],
+.container input[type="tel"],
+.container input[type="date"],
+.container input[type="number"],
+.container select,
+.container textarea {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+}
+
+.container input[type="radio"] {
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.container input[type="radio"]:checked {
+    background-color: #00BFFF;
+    border-color: #00BFFF;
+}
+
+.container .form-check-label {
+    font-size: 1em;
+    margin-left: 10px;
+}
+
+.container .form-check-label input[type="radio"] {
+    margin-right: 5px;
+}
+
+.container .form-select {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin: 10px 0;
+}
+
+button[type="submit"] {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.container input::placeholder,
+.container textarea::placeholder {
+    color: gray;
+    opacity: 1;
+}
+
+.custom-select {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    appearance: none;
+}
+
+.custom-select:focus {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.custom-select option {
+    background-color: #021526;
+    color: white;
+}
+
+.custom-select::-ms-expand {
+    display: none;
+}
+
+.custom-select::after {
+    content: ' ▼';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 18px;
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 15px;
+    }
+
+    .container h1 {
+        font-size: 2em;
+    }
+
+    fieldset {
+        padding: 15px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
+
+    .container label,
+    .container input[type="text"],
+    .container input[type="password"],
+    .container input[type="email"],
+    .container input[type="tel"],
+    .container input[type="date"],
+    .container select,
+    .container textarea {
+        font-size: 1em;
+    }
+}
