@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display Form Data</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
 <body>
@@ -29,10 +31,10 @@
                 // Display the data dynamically
                 data.forEach((formData, index) => {
                     const userDiv = document.createElement("div");
-                    userDiv.classList.add("border", "p-3", "mb-4");
+                    userDiv.classList.add("border", "p-3", "mb-4", "rounded");
 
                     const personalInfo = `
-                        <h5>Personal Information:</h5>
+                        <h5><i class="bi bi-person"></i> Personal Information:</h5>
                         <p><strong>Name:</strong> ${formData.personalInformation.firstName} ${formData.personalInformation.middleName} ${formData.personalInformation.lastName}</p>
                         <p><strong>Gender:</strong> ${formData.personalInformation.gender}</p>
                         <p><strong>Date of Birth:</strong> ${formData.personalInformation.dob}</p>
@@ -40,7 +42,7 @@
                     `;
 
                     const educationInfo = `
-                        <h5>Educational Information:</h5>
+                        <h5><i class="bi bi-graduation-cap"></i> Educational Information:</h5>
                         <p><strong>Highest Qualification:</strong> ${formData.educationalInformation.highestQualification}</p>
                         <p><strong>Field of Study:</strong> ${formData.educationalInformation.fieldOfStudy}</p>
                         <p><strong>University/Institute:</strong> ${formData.educationalInformation.university}</p>
@@ -48,7 +50,7 @@
                     `;
 
                     const addressInfo = `
-                        <h5>Address:</h5>
+                        <h5><i class="bi bi-house-door"></i> Address:</h5>
                         <p><strong>Country:</strong> ${formData.address.country}</p>
                         <p><strong>State:</strong> ${formData.address.state}</p>
                         <p><strong>City:</strong> ${formData.address.city}</p>
@@ -57,7 +59,7 @@
                     `;
 
                     const loginInfo = `
-                        <h5>Login Details:</h5>
+                        <h5><i class="bi bi-envelope"></i> Login Details:</h5>
                         <p><strong>Email:</strong> ${formData.loginDetails.email}</p>
                     `;
 
@@ -72,7 +74,9 @@
                 });
             })
             .catch(error => {
+                const dataContainer = document.getElementById("data-container");
                 console.error('Error fetching data:', error);
+                dataContainer.innerHTML = "<p>Failed to load data. Please try again later.</p>";
             });
     </script>
 

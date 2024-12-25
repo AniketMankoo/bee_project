@@ -70,6 +70,13 @@ legend {
     outline: none;
 }
 
+.container input:focus,
+.container select:focus,
+.container textarea:focus {
+    border-color: #00BFFF;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
 .container input[type="radio"] {
     margin-right: 10px;
     margin-left: 0;
@@ -113,8 +120,7 @@ button[type="submit"]:hover {
 
 .container input::placeholder,
 .container textarea::placeholder {
-    color: gray;
-    opacity: 1;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .custom-select {
@@ -149,6 +155,18 @@ button[type="submit"]:hover {
     transform: translateY(-50%);
     color: white;
     font-size: 18px;
+}
+
+.data-entry {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.data-entry p {
+    margin: 5px 0;
 }
 
 @media (max-width: 767px) {

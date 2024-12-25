@@ -1,0 +1,56 @@
+[
+  {
+    "personalInformation": {
+      "firstName": "Aniket",
+      "middleName": "",
+      "lastName": "Mankoo",
+      "gender": "male",
+      "dob": "2004-04-24",
+      "phone": "9646958198"
+    },
+    "educationalInformation": {
+      "highestQualification": "B.E.",
+      "fieldOfStudy": "Computer Science & Engineering",
+      "university": "Chitkara University",
+      "graduationYear": "2027"
+    },
+    "address": {
+      "country": "IN",
+      "state": "Punjab",
+      "city": "Ludhiana",
+      "pincode": "141010",
+      "addressLine": "HL-3, P.H.B. Colony Jamalpur"
+    },
+    "loginDetails": {
+      "email": "amankoo2004@gmail.com",
+      "password": "a"
+    }
+  },
+  {
+    "personalInformation": {
+      "firstName": "Aniket",
+      "middleName": "",
+      "lastName": "Mankoo",
+      "gender": "male",
+      "dob": "2004-04-24",
+      "phone": "9646958198"
+    },
+    "educationalInformation": {
+      "highestQualification": "B.E.",
+      "fieldOfStudy": "Computer Science & Engineering",
+      "university": "Chitkara University",
+      "graduationYear": "2027"
+    },
+    "address": {
+      "country": "IN",
+      "state": "Punjab",
+      "city": "Ludhiana",
+      "pincode": "141010",
+      "addressLine": "HL-3, P.H.B. Colony Jamalpur"
+    },
+    "loginDetails": {
+      "email": "amankoo2004@gmail.com",
+      "password": "a"
+    }
+  }
+]
