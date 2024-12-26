@@ -8,6 +8,9 @@ const cors = require('cors');
 app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
+app.get('/data.json', (req, res) => {
+    res.sendFile(path.join(__dirname, 'data.json'));
+});
 
 // Form submission endpoint
 app.post('/submit-form', (req, res) => {
@@ -17,7 +20,7 @@ app.post('/submit-form', (req, res) => {
     if (!formData.personalInformation.firstName || !formData.loginDetails.email) {
         return res.status(400).json({ message: 'First name and email are required' });
     }
-
+    
     fs.readFile(filePath, 'utf8', (err, data) => {
         if (err && err.code !== 'ENOENT') {
             console.error(err);
@@ -80,8 +83,6 @@ app.get('/states.json', (req, res) => {
         res.json(JSON.parse(data)); // Send the parsed JSON data
     });
 });
-
-
 
 // Start the server
 app.listen(port, () => {

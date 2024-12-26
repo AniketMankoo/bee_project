@@ -1,17 +1,17 @@
 [
   {
     "personalInformation": {
-      "firstName": "Aniket",
+      "firstName": "wdwdwd",
       "middleName": "",
-      "lastName": "Mankoo",
+      "lastName": "sswqsw",
       "gender": "male",
       "dob": "2004-04-24",
       "phone": "9646958198"
     },
     "educationalInformation": {
-      "highestQualification": "B.E.",
+      "highestQualification": "ss",
       "fieldOfStudy": "Computer Science & Engineering",
-      "university": "Chitkara University",
+      "university": "ssd",
       "graduationYear": "2027"
     },
     "address": {
@@ -19,26 +19,26 @@
       "state": "Punjab",
       "city": "Ludhiana",
       "pincode": "141010",
-      "addressLine": "HL-3, P.H.B. Colony Jamalpur"
+      "addressLine": "wdwdw"
     },
     "loginDetails": {
-      "email": "amankoo2004@gmail.com",
+      "email": "a.mankoo6572@yahoo.com",
       "password": "a"
     }
   },
   {
     "personalInformation": {
-      "firstName": "Aniket",
+      "firstName": "wdwdwd",
       "middleName": "",
-      "lastName": "Mankoo",
+      "lastName": "sswqsw",
       "gender": "male",
       "dob": "2004-04-24",
       "phone": "9646958198"
     },
     "educationalInformation": {
-      "highestQualification": "B.E.",
-      "fieldOfStudy": "Computer Science & Engineering",
-      "university": "Chitkara University",
+      "highestQualification": "ss",
+      "fieldOfStudy": "ss",
+      "university": "ssd",
       "graduationYear": "2027"
     },
     "address": {
@@ -46,10 +46,37 @@
       "state": "Punjab",
       "city": "Ludhiana",
       "pincode": "141010",
-      "addressLine": "HL-3, P.H.B. Colony Jamalpur"
+      "addressLine": "sdwdw"
     },
     "loginDetails": {
-      "email": "amankoo2004@gmail.com",
+      "email": "a.mankoo6572@yahoo.com",
+      "password": "a"
+    }
+  },
+  {
+    "personalInformation": {
+      "firstName": "wdwdwd",
+      "middleName": "",
+      "lastName": "sswqsw",
+      "gender": "male",
+      "dob": "2004-04-24",
+      "phone": "9646958198"
+    },
+    "educationalInformation": {
+      "highestQualification": "ss",
+      "fieldOfStudy": "ss",
+      "university": "ssd",
+      "graduationYear": "2027"
+    },
+    "address": {
+      "country": "IN",
+      "state": "Punjab",
+      "city": "Ludhiana",
+      "pincode": "141010",
+      "addressLine": "wdsdw"
+    },
+    "loginDetails": {
+      "email": "a.mankoo6572@yahoo.com",
       "password": "a"
     }
   }
